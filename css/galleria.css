@@ -1,0 +1,59 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+h2, h3, h4, h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+h5{
+    letter-spacing: 2px; 
+    color: #818963;
+    margin-top: 20px;
+}
+table{
+    color: #4f4f4f; 
+    border-color: #666;
+}
+input{
+    padding-right:0;
+}
+.container-fluid{
+    padding: 0;
+}
+
+#navbar {
+    border-bottom: 2px black solid;
+}
+.navLinks{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+    padding: 10px;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    background-color: #ee8d51c2;
+}
+p{
+    line-height: normal;
+    margin:0;
+}
+#footer{
+    background-color: #d9cfc5;
+    margin-top:50px;
+}
+#carouselDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

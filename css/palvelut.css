@@ -1,0 +1,67 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+h2, h3, h4, h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+h5{
+    letter-spacing: 2px; 
+    color: #818963;
+    margin-top: 20px;
+}
+p{
+    line-height: normal;
+    margin:0;
+}
+table{
+    color: #4f4f4f; 
+    border-color: #666;
+}
+input{
+    padding-right:0;
+}
+.container-fluid{
+    padding: 0;
+}
+#navbar {
+    border-bottom: 2px black solid;
+    background-color: whitesmoke;
+    height: 100px;
+}
+.navLinks{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    background-color: #ee8d51c2;
+}
+#palvelutImgDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#palvelutImg{
+    max-width: 60%;
+}
+#someLink{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#footer{
+    background-color: #d9cfc5;
+}
+.palvelutP{
+    line-height: 1.5;
+}
