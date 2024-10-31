@@ -1,57 +1,83 @@
+/* yleinen fontti koko sivulle*/
 body{
     font-family: 'Roboto', sans-serif;
+    color: #4f4f4f;
 }
+/* otsikoiden koot tehtävänannon mukaiseksi */
 h1 {
     font-size: 24px;
 }
 h2, h3, h4, h5 {
     font-size: 16px;
 }
+/* vitosotsikolle tarkemmat muotoilut kuten kirjainten väliin lisää tilaa ja eri fonttiväri */
 h5{
     letter-spacing: 2px; 
-    color: #818963;
+    color: #556B2F;
+    /* color: #818963; */
     margin-top: 20px;
 }
+/* footerin taulukkoelementille muotoilu */
 table{
     color: #4f4f4f; 
     border-color: #666;
 }
-a{
+/* navigointipalkin sisällä oleville linkeille muotoilu */
+#navbar a{
     text-decoration: none;
-    color: black;
+    letter-spacing: 2pt;
+    color: #556B2F;
+    /* color: #4f4f4f; */
     padding: 10px;
+    font-weight: bold;
 }
+/* footerin sisällä oleville linkeille muotoilu */
+#footer a{
+    text-decoration: none;
+    color: #4f4f4f;
+    padding:10px
+}
+/* yleisesti linkeille hover-muotoilut */
 a:hover{
     text-decoration: none;
-    color: black;
+    color: #4f4f4f;
     border-radius: 4px;
     background-color: #ee8d51c2;
 }
+/* p-elementin muotoilu */
 p{
     line-height: normal;
     margin:0;
 }
-.container-fluid{
-    padding: 0;
-}
+/* navigointipalkin sijainti */
+ #navbarDiv{
+    top: 0;
+    z-index: 2;
+ }
+ /* navigointipalkin yleismuotoilu */
 #navbar {
-    border-bottom: 2px black solid;
+    height: 150px;
+    font-weight: 500;
+    background-color: whitesmoke;
 }
+/* kursorin muttaminen */
 .navLinks{
     cursor: pointer;
 }
-
+/* etusivun kuvan containeri */
 #headerImgDiv{
     width: 60%;
     max-width: 100%;
     display: flex;
     justify-content: center;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
+/* etusivun kuvan koko */
 #headerImg{
     width: 100%;
-
 }
-
+/* etusivun tekstin containeri*/
 #headerTextDiv{
     width: 70%;
     top: 25%; 
@@ -62,14 +88,18 @@ p{
     text-wrap: wrap;
     letter-spacing: 2pt;
 }
-
-#headerText{
-    font-family: 'Roboto', sans-serif;
+/* etusivun header-tekstin muotoilu */
+#headerText{ 
     color: white;
     text-shadow: 10px 10px 20px black;
     font-size: 4vw;
     font-weight: bold;
 }
+/* footerin containerin sijainti sivulla */
+#footerContainer{
+    bottom: 0;
+}
+/* footerin taustaväri ja leveys */
 #footer{
     background-color: #d9cfc5;
     width: 100%;

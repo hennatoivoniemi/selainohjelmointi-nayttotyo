@@ -16,54 +16,56 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row my-4 py-4" id="navbar">
-            <div class="col navLinks"><a>Etusivu</a></div>
-            <div class="col navLinks"><a href="./palvelut.html">Palvelut</a></div>
-            <div class="col navLinks"><a href="./testaus.html">Värien testaus</a></div>
-            <div class="col navLinks"><a href="./galleria.html">Galleria</a></div>
-            <div class="col navLinks"><a href="./yhteystiedot.html">Yhteystiedot</a></div>
+    <!-- tässä navigointipalkki -->
+    <div class="container-fluid position-sticky" id="navbarDiv">
+        <div class="row py-4 justify-content-center " id="navbar">
+            <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./index.html">Etusivu</a></div>
+            <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./palvelut.html">Palvelut</a>
+            </div>
+            <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./testaus.html">Värien
+                    testaus</a></div>
+            <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./galleria.html">Galleria</a>
+            </div>
+            <div class="col-2 my-auto navLinks d-flex justify-content-center"><a
+                    href="./yhteystiedot.html">Yhteystiedot</a></div>
         </div>
-
     </div>
-    <div class="container-fluid">
+
+    <!-- tässä etusivun kuva ja yrityksen nimi -->
+    <div class="container-fluid position-relative" id="middleContainerDiv">
         <div class="row justify-content-center">
             <div class="position-relative" id="headerImgDiv">
                 <img class="img-fluid mx-auto" id="headerImg" src="./asssets/pexels-ivan-samkov-5798984.jpg" />
                 <div class="position-absolute" id="headerTextDiv">
+                    <!-- tämän h1 otsikon koko eri kuin tehtävänannossa, etusivu olisi näyttänyt tosi kököltä liian pienen tekstin kanssa, eli otin tietoisen irtioton tehtävänannosta tässä kohtaa. -->
                     <h1 id="headerText">Kotkantien maalaus ja tapetointi</h1>
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="container-fluid">
-    <footer class="" id="footer">
-        
-            <div class="row my-5 p-4">
+
+    <!-- tästä alkaa footer -->
+    <div class="container-fluid px-0 " id="footerContainer">
+        <footer class="footer position-absolute" id="footer">
+
+            <div class="row p-4">
                 <div class="col-lg-4 col-md-12">
                     <h5>Kotkantien maalaus ja tapetointi</h5>
                     <div>
-                        <!-- <p><b>Kotkantien maalaus ja tapetonti</b></p> -->
                         <p>Kotkantie 3</p>
                         <p>90100 Oulu</p>
                         <div><i class="bi bi-telephone"></i> 044 999 888 99</div>
                         <div><i class="bi bi-envelope"></i> info@kotkantienmaalaus.fi</div>
                     </div>
-                    <!-- <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                  molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                  voluptatem veniam, est atque cumque eum delectus sint!
-                </p> -->
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5>löydät meidät somesta</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2">
-                            <a href="" style="color: #4f4f4f;"><i class="bi bi-instagram"></i> Instagram</a>
+                            <a href=""><i class="bi bi-instagram"></i> Instagram</a>
                         </li>
                         <li class="mb-2">
-                            <a href="" style="color: #4f4f4f;"><i class="bi bi-youtube"></i> YouTube</a>
+                            <a href=""><i class="bi bi-youtube"></i> YouTube</a>
                         </li>
                     </ul>
                 </div>
@@ -83,13 +85,8 @@
                     </table>
                 </div>
             </div>
-     
-        <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2020 Copyright:
-            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-          </div> -->
-    </footer>
-</div>
+        </footer>
+    </div>
 
 
 

@@ -1,67 +1,94 @@
+/* yleinen fontti koko sivulle*/
 body{
     font-family: 'Roboto', sans-serif;
+    color: #4f4f4f;
+    background-color: #f5f5f5;
 }
+/* otsikoiden koot tehtävänannon mukaiseksi */
 h1 {
     font-size: 24px;
-    font-weight: bold;
 }
 h2, h3, h4, h5 {
     font-size: 16px;
-    font-weight: bold;
 }
+/* vitosotsikolle tarkemmat muotoilut kuten kirjainten väliin lisää tilaa ja eri fonttiväri */
 h5{
     letter-spacing: 2px; 
-    color: #818963;
+    color: #556B2F;
+    /* color: #818963; */
     margin-top: 20px;
 }
-p{
-    line-height: normal;
-    margin:0;
-}
+/* footerin taulukkoelementille muotoilu */
 table{
     color: #4f4f4f; 
     border-color: #666;
 }
-input{
-    padding-right:0;
-}
-.container-fluid{
-    padding: 0;
-}
-#navbar {
-    border-bottom: 2px black solid;
-    background-color: whitesmoke;
-    height: 100px;
-}
-.navLinks{
-    cursor: pointer;
-}
-a{
+/* navigointipalkin sisällä oleville linkeille muotoilu */
+#navbar a{
     text-decoration: none;
-    color: black;
+    letter-spacing: 2pt;
+    color: #556B2F;
+    /* color: #4f4f4f; */
     padding: 10px;
+    font-weight: bold;
 }
+/* footerin sisällä oleville linkeille muotoilu */
+#footer a{
+    text-decoration: none;
+    color: #4f4f4f;
+    padding:10px
+}
+/* yleisesti linkeille hover-muotoilut */
 a:hover{
     text-decoration: none;
-    color: black;
+    color: #4f4f4f;
     border-radius: 4px;
     background-color: #ee8d51c2;
 }
+/* p-elementin muotoilu */
+p{
+    line-height: normal;
+    margin:0;
+}
+/* navigointipalkin sijainti */
+#navbarDiv{
+    top: 0;
+    z-index: 2;
+}
+ /* navigointipalkin yleismuotoilu */
+#navbar {
+    height: 150px;
+    box-shadow: 2px 2px 10px #4f4f4f;
+    background-color: whitesmoke;
+}
+/* kursorin muttaminen */
+.navLinks{
+    cursor: pointer;
+}
+/* footerin containerin sijainti */
+#footerContainer{
+    bottom: 0;
+}
+/* footerin taustaväri ja leveys */
+#footer{
+    background-color: #d9cfc5;
+    width: 100%;
+}
+/* palvelu-sivun otsikoiden muotoilu */
+.palvelutHeader{
+    font-weight: 600;
+}
+/* palvelu-sivun p-elementeille riviväliö */
+.palvelutP{
+    line-height: 1.5;
+}
+/* palvelu-sivun kuvien containeri */
 #palvelutImgDiv{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* palvelu-sivun kuvan koko suhteessa containeriin */
 #palvelutImg{
     max-width: 60%;
-}
-#someLink{
-    cursor: pointer;
-    text-decoration: underline;
-}
-#footer{
-    background-color: #d9cfc5;
-}
-.palvelutP{
-    line-height: 1.5;
 }
