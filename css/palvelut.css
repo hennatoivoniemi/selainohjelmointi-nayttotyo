@@ -1,8 +1,13 @@
+html{
+    box-sizing: border-box;
+}
 /* yleinen fontti koko sivulle*/
 body{
     font-family: 'Roboto', sans-serif;
     color: #4f4f4f;
     background-color: #f5f5f5;
+    overflow-x: hidden;
+
 }
 /* otsikoiden koot tehtävänannon mukaiseksi */
 h1 {
@@ -39,7 +44,7 @@ table{
     padding:10px
 }
 /* yleisesti linkeille hover-muotoilut */
-a:hover{
+#navbar a:hover, #footer a:hover{
     text-decoration: none;
     color: #4f4f4f;
     border-radius: 4px;
@@ -74,21 +79,85 @@ p{
     background-color: #d9cfc5;
     width: 100%;
 }
-/* palvelu-sivun otsikoiden muotoilu */
+/* etusivun kuvan containeri */
+#palvelutHeaderImgDiv{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+/* etusivun kuvan koko */
+#palvelutHeaderImg{
+    width: 100%;
+    filter: grayscale(15%);
+}
+/* etusivun tekstin containeri*/
+#palvelutHeaderTextDiv{
+    width: 70%;
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    text-wrap: wrap;
+    letter-spacing: 2pt;
+}
+/* etusivun header-tekstin muotoilu */
+#palvelutHeaderText{ 
+    color: white;
+    text-shadow: 10px 10px 20px black;
+    font-size: 4vw;
+    font-weight: bold;
+}
+/* pienempi otsikkoteksti */
+#palvelutHeaderTextSmall{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+/* pienemmän otsikkotekstin container */
+#palvelutHeaderTextSmallDiv{
+    width: 80%;
+    max-width: 80%;
+    text-align: center;
+    text-wrap: wrap;
+}
+/* Maalaus/tapetointi-otsikot boldaus */
 .palvelutHeader{
-    font-weight: 600;
+    font-weight: bold;
 }
 /* palvelu-sivun p-elementeille riviväliö */
 .palvelutP{
     line-height: 1.5;
 }
+/* container teksteille */
+.palveluTexttDiv{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
 /* palvelu-sivun kuvien containeri */
-#palvelutImgDiv{
+.palvelutImgDiv{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 /* palvelu-sivun kuvan koko suhteessa containeriin */
-#palvelutImg{
+.palvelutImg{
     max-width: 60%;
+}
+/* tarjous-nappulan muotoilut */
+.tarjousBtn{
+    border-color: #556B2F;
+    color: #4f4f4f;
+}
+.tarjousBtn:hover{
+    background-color: #556B2F;
+}
+.container-fluid{
+    padding:0;
 }

@@ -25,107 +25,112 @@
     </div>
   </div>
 
-  <!-- tästä alkaa sivun sisältö -->
-  <div class="container-fluid position-relative" id="middleContainerDiv"></div>
-  <!-- ensimmäisellä rivillä vain otsikko -->
-   <!-- tässä tehtävänannon mukainen fonttikoko, olisin itse halunnut muotoilla ihan eri tavalla (eri fontti, isompi koko) -->
-    <div class="row justify-content-center">
-      <h1 class="mt-5 py-4">MEILTÄ, AMMATTITAIDOLLA</h1>
-    </div>
-
-    <!-- toisella rivillä maalauspalvelutiedot ja kuva -->
-    <div class="row p-4 justify-content-center">
-      <div class="col-12 col-sm-5 p-5 d-flex-column justify-content-center border-top">
-        <!-- h2 fonttikoko on minusta liian pieni. On nyt tehtävänannon mukainen mutta minusta ei ole hyvä/sopusuhtainen sivuun nähden. Olisin muotoillut eri tavalla jos tehtävänanto olisi antanut myöten.  -->
-        <h2 class="palvelutHeader">Maalauspalvelut</h2>
-        <p class="palvelutP">Ut quis Lorem mollit ullamco et. Enim eiusmod ullamco ex do occaecat ad aliqua incididunt
-        aliqua
-        anim. Ea amet nulla do elit proident deserunt elit ullamco excepteur.
-
-        Ullamco quis anim anim voluptate. In elit laborum et sint laborum consectetur eu magna esse. Laboris
-        enim occaecat commodo nisi laboris. Reprehenderit ea aliqua excepteur consequat.</p> <br>
-
-        <p class="palvelutP">Sunt eiusmod tempor sit veniam reprehenderit mollit in ipsum occaecat elit incididunt
-        laborum
-        incididunt ad. Amet sunt ipsum sint sint commodo Lorem nisi aliquip ad. Adipisicing officia veniam
-        veniam minim magna mollit voluptate dolore id nostrud aute eu non. Eu irure voluptate dolor id magna
-        commodo Lorem. Cupidatat voluptate in id pariatur adipisicing est aliqua dolore Lorem proident.
-
-        Id velit tempor fugiat tempor commodo magna irure culpa deserunt do nisi ipsum adipisicing mollit.
-        Do pariatur voluptate non est. Et occaecat exercitation cupidatat aute anim amet. Eu voluptate elit
-        id cillum occaecat proident nisi commodo sit enim culpa ullamco.</p>
-      </div>
-      <div class="col-12 col-sm-5 p-5 d-flex-column justify-content-center border-top" id="palvelutImgDiv">
-        <img class="img-fluid" id="palvelutImg" src="./asssets/pexels-cassidy-muir-1079619-2065971.jpg" />
-      </div>
-    </div>
-
-    <div class="row p-4 justify-content-center">
-      <div class="col-12 col-sm-5 p-5 d-flex-column justify-content-center border-top" id="palvelutImgDiv">
-        <img class="img-fluid" src="./asssets/pexels-curt-hubner-39375428-20806624.jpg" />
-      </div>
-      <div class="col-12 col-sm-5 p-4 p-5 d-flex-column justify-content-center border-top">
-        <h2 class="palvelutHeader">Tapetointipalvelut</h2>
-        <p class="palvelutP">Sunt eiusmod tempor sit veniam reprehenderit mollit in ipsum occaecat elit incididunt
-        laborum
-        incididunt ad. Amet sunt ipsum sint sint commodo Lorem nisi aliquip ad. Adipisicing officia veniam
-        veniam minim magna mollit voluptate dolore id nostrud aute eu non. Eu irure voluptate dolor id magna
-        commodo Lorem. Cupidatat voluptate in id pariatur adipisicing est aliqua dolore Lorem proident.</p> </br>
-
-        <p class="palvelutP">Id velit tempor fugiat tempor commodo magna irure culpa deserunt do nisi ipsum adipisicing
-        mollit.
-        Do pariatur voluptate non est. Et occaecat exercitation cupidatat aute anim amet. Eu voluptate elit
-        id cillum occaecat proident nisi commodo sit enim culpa ullamco.
-
-        Ullamco commodo reprehenderit anim consectetur aute tempor qui nisi tempor exercitation sint. Aute
-        labore dolor mollit tempor. Culpa et non incididunt ipsum elit ullamco laboris nostrud quis minim
-        nostrud aliqua.</p>
+  <!-- sivun banneri, h1 fonttikoko tietoisesti laitettu isommaksi kuin tehtävänannossa -->
+  <div class="container-fluid position-relative" id="middleContainerDiv">
+    <div class="row my-4 justify-content-center">
+      <div class="position-relative" id="palvelutHeaderImgDiv">
+        <img class="img-fluid mx-auto" id="palvelutHeaderImg"
+          src="./asssets/pexels-neverlera-10194600_tight_cropped.jpg" />
+        <div class="position-absolute" id="palvelutHeaderTextDiv">
+          <!-- tämän h1 otsikon koko eri kuin tehtävänannossa, etusivu olisi näyttänyt tosi kököltä liian pienen tekstin kanssa, eli otin tietoisen irtioton tehtävänannosta tässä kohtaa. -->
+          <h1 id="palvelutHeaderText">Maalauksen ja tapetoinnin ammattilaisilta</h1>
+        </div>
       </div>
     </div>
   </div>
 
-    <!-- tästä alkaa footer -->
-    <div class="container-fluid px-0 " id="footerContainer">
-      <footer class="footer position-absolute" id="footer">
+  <!-- Tästä alkaa bannerin jälkeinen sisältö -->
+  <div class="container-fluid">
+    <!-- Lyhyt kuvaus, fonttikokoa taas muokattu isommaksi kuin tehtävänannossa -->
+    <div class="row my-4 justify-content-center">
+      <div id="palvelutHeaderTextSmallDiv">
+        <h3 id="palvelutHeaderTextSmall">Etsitkö luotettavaa ja ammattitaitoista tekijää toteuttamaan sisustushaaveesi?
+          Kotkantien maalaus ja tapetoinnista löydät tekijät juuri sinun tarpeisiisi.</h3>
+      </div>
+    </div>
 
-          <div class="row p-4">
-              <div class="col-lg-4 col-md-12">
-                  <h5>Kotkantien maalaus ja tapetointi</h5>
-                  <div>
-                      <p>Kotkantie 3</p>
-                      <p>90100 Oulu</p>
-                      <div><i class="bi bi-telephone"></i> 044 999 888 99</div>
-                      <div><i class="bi bi-envelope"></i> info@kotkantienmaalaus.fi</div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                  <h5>löydät meidät somesta</h5>
-                  <ul class="list-unstyled">
-                      <li class="mb-2">
-                          <a href=""><i class="bi bi-instagram"></i> Instagram</a>
-                      </li>
-                      <li class="mb-2">
-                          <a href=""><i class="bi bi-youtube"></i> YouTube</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <h5>olemme avoinna</h5>
-                  <table class="table">
-                      <tbody>
-                          <tr>
-                              <td>Ma - Pe:</td>
-                              <td>9:00 - 18:00</td>
-                          </tr>
-                          <tr>
-                              <td>La - Su:</td>
-                              <td>Sopimuksen mukaan</td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
+    <!-- toisella rivillä maalauspalvelutiedot ja kuva -->
+    <div class="row p-4 justify-content-center">
+      <div class="col-12 col-sm-4 py-5 d-flex align-items-center justify-content-center border-top">
+        <div class="palveluTexttDiv">
+          <h2 class="palvelutHeader">Maalauspalvelumme kattavat:</h2>
+          <ul class="m-1">
+            <li>Sisätilojen seinät ja katot</li>
+            <li>Lattiat, portaat ja patterit</li>
+            <li>Huonekalut ja kiinteät kalusteet</li>
+            <li>Ulkoseinät</li>
+            <li>Terassit, aidat ja ulkovarastot</li>
+            <li>Sekä paljon muuta</li>
+          </ul>
+          <a class="btn btn-outline-secondary tarjousBtn m-4" href="./yhteystiedot.html">Pyydä tarjous</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 py-5 border-top palvelutImgDiv" id="">
+        <img class="img-fluid palvelutImg" id="" src="./asssets/pexels-shkrabaanthony-5493653.jpg" />
+      </div>
+    </div>
+
+    <div class="row p-4 justify-content-center">
+      <div class="col-12 col-sm-4 py-5 border-top palvelutImgDiv" id="">
+        <img class="img-fluid palvelutImg" id="" src="./asssets/pexels-curt-hubner-39375428-20806624.jpg" />
+      </div>
+      <div class="col-12 col-sm-4 py-5 d-flex align-items-center justify-content-center border-top">
+        <div class="palveluTexttDiv">
+          <h2 class="palvelutHeader">Tapetointia vaativiinkin kohteisiin:</h2>
+          <ul class="m-1">
+            <li>Sisätilojen seinät ja katot</li>
+            <li>Uudis- ja remonttikohteet</li>
+            <li>Vanhojen tapettien poistot</li>
+            <li>Pohja- ja tasoitustyöt</li>
+            <li>Kosteat tilat</li>
+          </ul>
+          <a class="btn btn-outline-secondary tarjousBtn m-4" href="./yhteystiedot.html">Pyydä tarjous</a>
+        </div>
+      </div>
+  </div>
+
+  <!-- tästä alkaa footer -->
+  <div class="container-fluid px-0 " id="footerContainer">
+    <footer class="footer position-absolute" id="footer">
+
+      <div class="row p-4 mx-0">
+        <div class="col-lg-4 col-md-12">
+          <h5>Kotkantien maalaus ja tapetointi</h5>
+          <div>
+            <p>Kotkantie 3</p>
+            <p>90100 Oulu</p>
+            <div><i class="bi bi-telephone"></i> 044 999 888 99</div>
+            <div><i class="bi bi-envelope"></i> info@kotkantienmaalaus.fi</div>
           </div>
-      </footer>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5>löydät meidät somesta</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href=""><i class="bi bi-instagram"></i> Instagram</a>
+            </li>
+            <li class="mb-2">
+              <a href=""><i class="bi bi-youtube"></i> YouTube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5>olemme avoinna</h5>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Ma - Pe:</td>
+                <td>9:00 - 18:00</td>
+              </tr>
+              <tr>
+                <td>La - Su:</td>
+                <td>Sopimuksen mukaan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </footer>
   </div>
 
 
