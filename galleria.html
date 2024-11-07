@@ -16,106 +16,167 @@
 </head>
 
 <body>
-    <!-- navigointipalkki -->
-    <div class="container-fluid">
-        <div class="row my-4 py-4" id="navbar">
-            <div class="col navLinks"><a href="./index.html">Etusivu</a></div>
-            <div class="col navLinks"><a href="./palvelut.html">Palvelut</a></div>
-            <div class="col navLinks"><a href="testaus.html">Värien testaus</a></div>
-            <div class="col navLinks"><a href="./galleria.html">Galleria</a></div>
-            <div class="col navLinks"><a href="./yhteystiedot.html">Yhteystiedot</a></div>
+  <!-- tässä navigointipalkki -->
+  <div class="container-fluid position-sticky" id="navbarDiv">
+    <div class="row py-4 justify-content-center " id="navbar">
+      <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./index.html">Etusivu</a></div>
+      <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./palvelut.html">Palvelut</a></div>
+      <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./testaus.html">Värien testaus</a>
+      </div>
+      <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./galleria.html">Galleria</a></div>
+      <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./yhteystiedot.html">Yhteystiedot</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- sivun banneri, h1 fonttikoko tietoisesti laitettu isommaksi kuin tehtävänannossa -->
+  <div class="container-fluid position-relative" id="middleContainerDiv">
+    <div class="row my-4 justify-content-center">
+      <div class="position-relative" id="palvelutHeaderImgDiv">
+        <img class="img-fluid mx-auto" id="palvelutHeaderImg"
+          src="./asssets/pexels-pixabay-260046_suurempi_cropped2.jpg" />
+        <div class="position-absolute" id="palvelutHeaderTextDiv">
+          <!-- tämän h1 otsikon koko eri kuin tehtävänannossa, etusivu olisi näyttänyt tosi kököltä liian pienen tekstin kanssa, eli otin tietoisen irtioton tehtävänannosta tässä kohtaa. -->
+          <h1 id="palvelutHeaderText">Tutustu valmistuneisiin kohteisiimme</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tästä alkaa bannerin jälkeinen sisältö -->
+  <div class="container-fluid">
+    <!-- Lyhyt kuvaus, fonttikokoa taas muokattu isommaksi kuin tehtävänannossa -->
+    <div class="row my-4 justify-content-center">
+      <div id="palvelutHeaderTextSmallDiv">
+        <h3 id="palvelutHeaderTextSmall">Mietitkö vielä miten toteuttaa remonttiunelmasi? Tutustu täällä valmistuneisiin kohteisiimme ja anna inspiraatiosi kukkia.</h3>
+      </div>
+    </div>
+
+    <!-- ensimmäinen remonttikohderivi-->
+    <div class="row p-4 m-4 justify-content-center border-top">
+      <!-- rivin sisällä kolme kolumnia, tässä ensimmäinen -->
+      <div class="col-12 col-md-3 m-2">
+        <div class="row justify-content-center"><img class="img-fluid remonttiImg" src="./asssets/pexels-heyho-7005274.jpg"/></div>
+        <div class="row p-2 justify-content-start">
+          <h2 class="palvelutHeader">Vierashuoneen maalaustyö:</h2>
+          <ul class="m-1">
+            <li class="py-2"><i class="bi bi-plus-circle"></i> Kuvaus projektista</li>
+            <li class="py-2"><i class="bi bi-plus-circle"></i> Työn kesto</li>
+            <li class="py-2"><i class="bi bi-plus-circle"></i> Hinta</li>
+          </ul>
+        </div>      
+      </div>
+      <!-- tässä toinen kolumni -->
+      <div class="col-12 col-md-3 m-2">
+        <div class="row justify-content-center"><img class="img-fluid remonttiImg" src="./asssets/pexels-heyho-6588597.jpg"/></div>
+        <div class="row p-2 justify-content-start">
+          <h2 class="palvelutHeader">Olohuoneen maalaustyö:</h2>
+          <ul class="m-1">
+            <li class="py-2"><i class="bi bi-plus-circle"></i> Kuvaus projektista</li>
+            <li class="py-2"><i class="bi bi-plus-circle"></i> Työn kesto</li>
+            <li class="py-2"><i class="bi bi-plus-circle"></i> Hinta</li>
+          </ul>
+        </div>
+      </div>
+      <!-- tässä kolmas kolumni -->
+      <div class="col-12 col-md-3 m-2">
+        <div class="row justify-content-center"><img class="img-fluid remonttiImg" src="./asssets/pexels-heyho-7147298.jpg"/></div>
+        <div class="row p-2 justify-content-start">
+          <h2 class="palvelutHeader">Keittiön ja ruokailutilan freesaus:</h2>
+          <ul class="m-1">
+            <li class="py-2"><i class="bi bi-plus-circle"></i> Kuvaus projektista</li>
+            <li class="py-2"><i class="bi bi-plus-circle"></i> Työn kesto</li>
+            <li class="py-2"><i class="bi bi-plus-circle"></i> Hinta</li>
+          </ul>
+        </div>   
+      </div>
+    </div>
+
+        <!-- toinen remonttikohderivi-->
+        <div class="row p-4 m-4 justify-content-center border-top">
+          <!-- ensimmäinen kolumni -->
+          <div class="col-12 col-md-3 m-2">
+            <div class="row justify-content-center"><img class="img-fluid remonttiImg" src="./asssets/pexels-curtis-adams-1694007-15580488.jpg"/></div>
+            <div class="row p-2 justify-content-start">
+              <h2 class="palvelutHeader">Makuuhuoneen tapetointi- ja maalaustyö:</h2>
+              <ul class="m-1">
+                <li class="py-2"><i class="bi bi-plus-circle"></i> Kuvaus projektista</li>
+                <li class="py-2"><i class="bi bi-plus-circle"></i> Työn kesto</li>
+                <li class="py-2"><i class="bi bi-plus-circle"></i> Hinta</li>
+              </ul>
+            </div>      
+          </div>
+          <!-- toinen kolumni -->
+          <div class="col-12 col-md-3 m-2">
+            <div class="row justify-content-center"><img class="img-fluid remonttiImg" src="./asssets/pexels-tima-miroshnichenko-6474343.jpg"/></div>
+            <div class="row p-2 justify-content-start">
+              <h2 class="palvelutHeader">Sisäkaton tasoitus- ja maalaustyö:</h2>
+              <ul class="m-1">
+                <li class="py-2"><i class="bi bi-plus-circle"></i> Kuvaus projektista</li>
+                <li class="py-2"><i class="bi bi-plus-circle"></i> Työn kesto</li>
+                <li class="py-2"><i class="bi bi-plus-circle"></i> Hinta</li>
+              </ul>
+            </div>
+          </div>
+          <!-- kolmas kolumni -->
+          <div class="col-12 col-md-3 m-2">
+            <div class="row justify-content-center"><img class="img-fluid remonttiImg" src="./asssets/pexels-heyho-7166567.jpg"/></div>
+            <div class="row p-2 justify-content-start">
+              <h2 class="palvelutHeader">Makuuhuoneen maalaustyö:</h2>
+              <ul class="m-1">
+                <li class="py-2"><i class="bi bi-plus-circle"></i> Kuvaus projektista</li>
+                <li class="py-2"><i class="bi bi-plus-circle"></i> Työn kesto</li>
+                <li class="py-2"><i class="bi bi-plus-circle"></i> Hinta</li>
+              </ul>
+            </div>   
+          </div>
         </div>
 
-    </div>
-    <!-- sivun sisältö -->
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-sm-8 col-12" id="carouselDiv">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="./asssets/pexels-shkrabaanthony-5493653.jpg"
-                                alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="./asssets/pexels-kseniachernaya-5691597.jpg"
-                                alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid" src="./asssets/pexels-curtis-adams-1694007-15580488.jpg"
-                                alt="Third slide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
+  </div>
+
+  <!-- tästä alkaa footer -->
+  <div class="container-fluid px-0 " id="footerContainer">
+    <footer class="footer position-absolute" id="footer">
+
+      <div class="row p-4 mx-0">
+        <div class="col-lg-4 col-md-12">
+          <h5>Kotkantien maalaus ja tapetointi</h5>
+          <div>
+            <p>Kotkantie 3</p>
+            <p>90100 Oulu</p>
+            <div><i class="bi bi-telephone"></i> 044 999 888 99</div>
+            <div><i class="bi bi-envelope"></i> info@kotkantienmaalaus.fi</div>
+          </div>
         </div>
-    </div>
-    <!-- footer -->
-    <footer class="">
-        <div class="container-fluid p-4" id="footer">
-            <div class="row">
-                <div class="col-lg-4 col-md-12">
-                    <h5>Kotkantien maalaus ja tapetointi</h5>
-                    <div>
-                        <!-- <p><b>Kotkantien maalaus ja tapetonti</b></p> -->
-                        <p>Kotkantie 3</p>
-                        <p>90100 Oulu</p>
-                        <div><i class="bi bi-telephone"></i> 044 999 888 99</div>
-                        <div><i class="bi bi-envelope"></i> info@kotkantienmaalaus.fi</div>
-                    </div>
-                    <!-- <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                      molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                      voluptatem veniam, est atque cumque eum delectus sint!
-                    </p> -->
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5>löydät meidät somesta</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <a href="" style="color: #4f4f4f;"><i class="bi bi-instagram"></i> Instagram</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="" style="color: #4f4f4f;"><i class="bi bi-youtube"></i> YouTube</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h5>olemme avoinna</h5>
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                                <td>Ma - Pe:</td>
-                                <td>9:00 - 18:00</td>
-                            </tr>
-                            <tr>
-                                <td>La - Su:</td>
-                                <td>Sopimuksen mukaan</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+        <div class="col-lg-4 col-md-6">
+          <h5>löydät meidät somesta</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href=""><i class="bi bi-instagram"></i> Instagram</a>
+            </li>
+            <li class="mb-2">
+              <a href=""><i class="bi bi-youtube"></i> YouTube</a>
+            </li>
+          </ul>
         </div>
-        <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2020 Copyright:
-                <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-              </div> -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5>olemme avoinna</h5>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Ma - Pe:</td>
+                <td>9:00 - 18:00</td>
+              </tr>
+              <tr>
+                <td>La - Su:</td>
+                <td>Sopimuksen mukaan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </footer>
-    </div>
+  </div>
 
 
 
