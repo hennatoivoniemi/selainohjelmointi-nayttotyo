@@ -32,7 +32,7 @@ table{
     border-color: #666;
 }
 /* navigointipalkin sisällä oleville linkeille muotoilu */
-#navbar a{
+#navbar a, #hamburgerNavbar a{
     text-decoration: none;
     letter-spacing: 2pt;
     color: #556B2F;
@@ -47,7 +47,7 @@ table{
     padding:10px
 }
 /* yleisesti linkeille hover-muotoilut */
-#navbar a:hover, #footer a:hover{
+#navbar a:hover, #footer a:hover, #hamburgerNavbar a:hover, #hamburgerButton:hover{
     text-decoration: none;
     color: #4f4f4f;
     border-radius: 4px;
@@ -79,23 +79,32 @@ p{
 /* Hampparivalikon container */
 .hamburgerDiv{
     position: relative;
-    height: 60px;
+    height: fit-content;
+    min-height: 40px;
     width: 100%;
     background-color: whitesmoke;
     display: none;
+    z-index: 2;
 }
 /* hampurilaisvalikko */
-#hamburger{
+#hamburgerButton{
     position: absolute;
     top: 10%;
-    left: 0;
+    left: 45%;
     border: unset;
     background: unset;
     padding: 10px;
+    width: fit-content;
 }
 /* hampparivalikon ikonin väritys */
-#hamburger svg {
+#hamburgerButton svg {
     stroke: #556B2F;
+}
+#hamburgerNavbar{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* footerin containerin sijainti */
 #footerContainer{
@@ -179,7 +188,7 @@ p{
         display:none;
     } */
     .hamburgerDiv {
-        display: flex;
+        display: block;
     }
     #palvelutHeaderText{
         font-size: 8vw;
@@ -190,11 +199,4 @@ p{
     #palvelutHeaderTextSmall{
         font-size: 16pt;
     }
-}
-
-.naviOpen{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
