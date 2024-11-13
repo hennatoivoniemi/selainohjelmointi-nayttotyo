@@ -1,0 +1,65 @@
+/* etusivun kuvan containeri */
+#headerImgDiv{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+/* etusivun kuvan koko */
+#headerImg{
+    width: 100%;
+}
+/* etusivun tekstin containeri*/
+#headerTextDiv{
+    width: 80%;
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    text-wrap: wrap;
+    letter-spacing: 2pt;
+}
+/* etusivun header-tekstin muotoilu */
+#headerText{ 
+    color: white;
+    /* text-shadow: 10px 10px 20px black; */
+    text-shadow: 5px 5px 10px #000000;
+    font-size: 5vw;
+    font-weight: bold;
+}
+/* Slogan tekstin divin sijainti */
+#sloganTextDiv{
+    width: 50%;
+    top: 35%; 
+    left: 65%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    text-wrap: wrap;
+    letter-spacing: 2pt;
+}
+#headerSlogan{
+    color: white;
+    text-shadow: 5px 5px 10px #000000;
+    font-size: 2vw;
+    font-style: italic;
+}
+/* pinemmällä näytöllä säädetään otsikoita vähän isommaksi ja  */
+@media screen and (max-width: 996px){
+    #headerText{
+        font-size: 8vw;
+    }
+    #headerTextDiv{
+        left: 45%;
+    }
+    #headerSlogan{
+        font-size: 4vw;
+    }
+    #sloganTextDiv {
+        top:65%;
+        left:45%;
+    }
+}

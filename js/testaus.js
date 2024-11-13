@@ -27,7 +27,3 @@ document.getElementById("firstColorClearBtn").addEventListener("click", () => {
 document.getElementById("secondColorClearBtn").addEventListener("click", () => {
     colorBoxElement2.style.backgroundColor = "white"
 })
-
-// colorBallElement.addEventListener('click', () => {
-//     console.log("hello")
-// })

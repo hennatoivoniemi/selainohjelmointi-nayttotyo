@@ -4,25 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./palvelut.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="./css/palvelut.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/palvelut.css">
   <title>Palvelumme</title>
 </head>
 
 <body>
-  <!-- tässä navigointipalkki -->
-  <div class="container-fluid position-sticky" id="navbarDiv">
-    <div class="row py-4 justify-content-center " id="navbar">
-      <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./index.html">Etusivu</a></div>
-      <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./palvelut.html">Palvelut</a></div>
-      <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./testaus.html">Värien testaus</a>
-      </div>
-      <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./galleria.html">Galleria</a></div>
-      <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./yhteystiedot.html">Yhteystiedot</a>
+    <!-- tässä navigointipalkki -->
+    <div class="container-fluid position-sticky" id="navbarDiv">
+      <div class="row py-4 justify-content-center " id="navbar">
+          <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./index.html">Etusivu</a></div>
+          <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./palvelut.html">Palvelut</a>
+          </div>
+          <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./testaus.html">Värien
+                  testaus</a></div>
+          <div class="col-2 my-auto navLinks d-flex justify-content-center"><a href="./galleria.html">Galleria</a>
+          </div>
+          <div class="col-2 my-auto navLinks d-flex justify-content-center"><a
+                  href="./yhteystiedot.html">Yhteystiedot</a></div>
+          </div>
+
       </div>
     </div>
+  <div class="hamburgerDiv container-fluid">
+      <button id="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M4 6l16 0"></path> <path d="M4 12l16 0"></path> <path d="M4 18l16 0"></path> </svg> 
+      </button>
+      
   </div>
 
   <!-- sivun banneri, h1 fonttikoko tietoisesti laitettu isommaksi kuin tehtävänannossa -->
@@ -62,16 +74,16 @@
             <li>Terassit, aidat ja ulkovarastot</li>
             <li>Sekä paljon muuta</li>
           </ul>
-          <a class="btn btn-outline-secondary tarjousBtn m-4" href="./yhteystiedot.html">Pyydä tarjous</a>
+          <a class="btn btn-outline-secondary omaBtn m-4" href="./yhteystiedot.html">Pyydä tarjous</a>
         </div>
       </div>
-      <div class="col-12 col-sm-4 py-5 border-top palvelutImgDiv" id="">
-        <img class="img-fluid palvelutImg" id="" src="./asssets/pexels-shkrabaanthony-5493653.jpg" />
+      <div class="col-12 col-sm-4 py-5 border-top palvelutImgDiv d-flex justify-content-center" id="">
+        <img class="img-fluid palvelutImg " id="" src="./asssets/pexels-kseniachernaya-5691597.jpg" />
       </div>
     </div>
 
     <div class="row p-4 justify-content-center">
-      <div class="col-12 col-sm-4 py-5 border-top palvelutImgDiv" id="">
+      <div class="col-12 col-sm-4 py-5 border-top palvelutImgDiv d-flex justify-content-center" id="">
         <img class="img-fluid palvelutImg" id="" src="./asssets/pexels-curt-hubner-39375428-20806624.jpg" />
       </div>
       <div class="col-12 col-sm-4 py-5 d-flex align-items-center justify-content-center border-top">
@@ -84,53 +96,53 @@
             <li>Pohja- ja tasoitustyöt</li>
             <li>Kosteat tilat</li>
           </ul>
-          <a class="btn btn-outline-secondary tarjousBtn m-4" href="./yhteystiedot.html">Pyydä tarjous</a>
+          <a class="btn btn-outline-secondary omaBtn m-4" href="./yhteystiedot.html">Pyydä tarjous</a>
         </div>
       </div>
   </div>
 
-  <!-- tästä alkaa footer -->
-  <div class="container-fluid px-0 " id="footerContainer">
-    <footer class="footer position-absolute" id="footer">
+    <!-- tästä alkaa footer -->
+    <div class="container-fluid px-0 " id="footerContainer">
+      <footer class="footer position-absolute" id="footer">
 
-      <div class="row p-4 mx-0">
-        <div class="col-lg-4 col-md-12">
-          <h5>Kotkantien maalaus ja tapetointi</h5>
-          <div>
-            <p>Kotkantie 3</p>
-            <p>90100 Oulu</p>
-            <div><i class="bi bi-telephone"></i> 044 999 888 99</div>
-            <div><i class="bi bi-envelope"></i> info@kotkantienmaalaus.fi</div>
+          <div class="row p-4">
+              <div class="col-lg-4 col-md-12 mb-4">
+                  <h5 style="font-weight: bold;">Kotkantien maalaus ja tapetointi</h5>
+                  <div>
+                      <p>Kotkantie 3</p>
+                      <p>90100 Oulu</p>
+                      <div><i class="bi bi-telephone"></i> 044 999 888 99</div>
+                      <div><i class="bi bi-envelope"></i> info@kotkantienmaalaus.fi</div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <h5 style="font-weight: bold;">löydät meidät somesta</h5>
+                  <ul class="list-unstyled">
+                      <li class="mb-2">
+                          <a href=""><i class="bi bi-instagram"></i> Instagram</a>
+                      </li>
+                      <li class="mb-2">
+                          <a href=""><i class="bi bi-youtube"></i> YouTube</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <h5 style="font-weight: bold;">olemme avoinna</h5>
+                  <table class="table">
+                      <tbody>
+                          <tr>
+                              <td>Ma - Pe:</td>
+                              <td>9:00 - 18:00</td>
+                          </tr>
+                          <tr>
+                              <td>La - Su:</td>
+                              <td>Sopimuksen mukaan</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h5>löydät meidät somesta</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2">
-              <a href=""><i class="bi bi-instagram"></i> Instagram</a>
-            </li>
-            <li class="mb-2">
-              <a href=""><i class="bi bi-youtube"></i> YouTube</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <h5>olemme avoinna</h5>
-          <table class="table">
-            <tbody>
-              <tr>
-                <td>Ma - Pe:</td>
-                <td>9:00 - 18:00</td>
-              </tr>
-              <tr>
-                <td>La - Su:</td>
-                <td>Sopimuksen mukaan</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </footer>
+      </footer>
   </div>
 
 
@@ -139,6 +151,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+  <script src="./js/navbar.js"></script>
 </body>
 
 </html>

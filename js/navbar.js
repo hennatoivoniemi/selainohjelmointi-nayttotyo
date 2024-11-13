@@ -1,11 +1,11 @@
 const hamburgerToggle = document.getElementById("hamburger")
-const navbarElement = document.getElementById("navbarDiv")
+const navbarDivElement = document.getElementById("navbarDiv")
 
 hamburgerToggle.addEventListener("click", () => {
-    if(navbarElement.classList.contains("open")) {
-        navbarElement.classList.remove("open")
+    if(navbarDivElement.classList.contains("open")) {
+        navbarDivElement.classList.remove("open")
     } else {
-        navbarElement.classList.add("open")
+        navbarDivElement.classList.add("open")
     }
     console.log('klikkasit hampurilaista')
 

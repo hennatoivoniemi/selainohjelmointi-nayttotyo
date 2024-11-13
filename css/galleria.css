@@ -23,11 +23,17 @@ h5{
     /* color: #818963; */
     margin-top: 20px;
 }
-/* footerin taulukkoelementille muotoilu */
-table{
-    color: #4f4f4f; 
-    border-color: #666;
+/* p-elementin muotoilu */
+p{
+    line-height: normal;
+    margin:0;
 }
+.container-fluid{
+    padding:0;
+}
+
+/* NAVIGOINTI JA FOOTER */
+
 /* navigointipalkin sisällä oleville linkeille muotoilu */
 #navbar a{
     text-decoration: none;
@@ -50,11 +56,7 @@ table{
     border-radius: 4px;
     background-color: #ee8d51c2;
 }
-/* p-elementin muotoilu */
-p{
-    line-height: normal;
-    margin:0;
-}
+
 /* navigointipalkin sijainti */
 #navbarDiv{
     top: 0;
@@ -70,6 +72,32 @@ p{
 .navLinks{
     cursor: pointer;
 }
+/* Hampparivalikon container */
+.hamburgerDiv{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: none;
+}
+/* hampurilaisvalikko */
+#hamburger{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    border: unset;
+    background: unset;
+    padding: 10px;
+}
+/* hampparivalikon ikonin väritys */
+#hamburger svg {
+    stroke: #556B2F;
+}
+/* footerissa käytettävälle taulukkoelementille muotoilu */
+table{
+    color: #4f4f4f; 
+    border-color: #666;
+}
 /* footerin containerin sijainti */
 #footerContainer{
     bottom: 0;
@@ -79,8 +107,11 @@ p{
     background-color: #d9cfc5;
     width: 100%;
 }
-/* etusivun kuvan containeri */
-#palvelutHeaderImgDiv{
+
+/* TÄSTÄ ALKAA SIVUSPESIFIT MUOTOILUT */
+
+/* Bannerikuvan container */
+#galleriaHeaderImgDiv{
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -88,13 +119,13 @@ p{
     margin-top:20px;
     margin-bottom: 20px;
 }
-/* etusivun kuvan koko */
-#palvelutHeaderImg{
+/* Bannerikuva */
+#galleriaHeaderImg{
     width: 100%;
     filter: grayscale(15%);
 }
-/* etusivun tekstin containeri*/
-#palvelutHeaderTextDiv{
+/* Ison otsikon container */
+#galleriaHeaderTextDiv{
     width: 70%;
     top: 45%; 
     left: 50%; 
@@ -104,67 +135,39 @@ p{
     text-wrap: wrap;
     letter-spacing: 2pt;
 }
-/* etusivun header-tekstin muotoilu */
-#palvelutHeaderText{ 
+/* Sivun ison otsikon muotoilu */
+#galleriaHeaderText{ 
     color: white;
     text-shadow: 10px 10px 20px black;
     font-size: 4vw;
     font-weight: bold;
 }
-/* pienempi otsikkoteksti */
-#palvelutHeaderTextSmall{
+/* Slogan */
+#galleriaHeaderTextSmall{
     font-size: 1.5vw;
     font-weight: bold;
 }
-/* pienemmän otsikkotekstin container */
-#palvelutHeaderTextSmallDiv{
+/* Sloganin container */
+#galleriaHeaderTextSmallDiv{
     width: 80%;
     max-width: 80%;
     text-align: center;
     text-wrap: wrap;
 }
-/* Maalaus/tapetointi-otsikot boldaus */
-.palvelutHeader{
+/* Remonttikohteiden headerit boldatuksi */
+.galleriaHeader{
     font-weight: bold;
 }
-/* palvelu-sivun p-elementeille riviväliö */
-.palvelutP{
-    line-height: 1.5;
+/* kuvien ympärille container jolle fiksattu korkeus */
+.galleriaImgDiv{
+    height: 100%;
+    max-height: 240px;
 }
-/* container teksteille */
-.palveluTexttDiv{
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 2;
+/* maksimi-koko remonttien kuville, jotta ovat yhtenäiset */
+.galleriaImg{
+    max-height: 240px;
 }
-/* palvelu-sivun kuvien containeri */
-.palvelutImgDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* palvelu-sivun kuvan koko suhteessa containeriin */
-.palvelutImg{
-    max-width: 60%;
-}
-/* tarjous-nappulan muotoilut */
-.tarjousBtn{
-    border-color: #556B2F;
-    color: #4f4f4f;
-}
-.tarjousBtn:hover{
-    background-color: #556B2F;
-}
-.container-fluid{
-    padding:0;
-}
-.remonttiImg{
-    max-height: 260px;
-}
-
+/* lista-elementtien pallurat pois ja lisätään hover-muotoilut */
 li{
     list-style-type: none;
     cursor: pointer;
@@ -172,6 +175,30 @@ li{
 li:hover{
     font-weight: bold;
 }
+/* ikonin koko */
 i{
     font-size: 14pt;
+}
+
+/* pinemmällä näytöllä säädetään otsikoita vähän isommaksi*/
+@media screen and (max-width: 996px){
+    #galleriaHeaderText{
+        font-size: 8vw;
+    }
+    #galleriaHeaderTextSmall{
+        font-size: 16pt;
+    }
+    .galleriaImgDiv{
+        width: 100%;
+        height: auto;
+    }
+    #navbarDiv{
+        display: none;
+    }
+    /* #navbar {
+        display:none;
+    } */
+    .hamburgerDiv {
+        display: flex;
+    }
 }
