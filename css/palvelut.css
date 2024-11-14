@@ -34,6 +34,7 @@ table{
 /* navigointipalkin sisällä oleville linkeille muotoilu */
 #navbar a, #hamburgerNavbar a{
     text-decoration: none;
+    font-size: 14pt;
     letter-spacing: 2pt;
     color: #556B2F;
     /* color: #4f4f4f; */
@@ -88,17 +89,10 @@ p{
 }
 /* hampurilaisvalikko */
 #hamburgerButton{
-    position: absolute;
-    top: 10%;
-    left: 45%;
     border: unset;
     background: unset;
     padding: 10px;
     width: fit-content;
-}
-/* hampparivalikon ikonin väritys */
-#hamburgerButton svg {
-    stroke: #556B2F;
 }
 #hamburgerNavbar{
     display: none;
@@ -197,6 +191,6 @@ p{
         top: 50%;
     }
     #palvelutHeaderTextSmall{
-        font-size: 16pt;
+        font-size: 14pt;
     }
 }
