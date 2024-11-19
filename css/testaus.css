@@ -32,17 +32,17 @@ p{
 .container-fluid{
     padding: 0;
 }
-/* ------------------------------------------------------------------------------ */
-
-/* NAVBARIN JA FOOTERIN MUOTOILUT */
+/* ------------------------------------------------------------------- */
+/* TÄSTÄ ALKAA NAVBARIN JA FOOTERIN MUOTOILUT */
 /* footerin taulukkoelementille muotoilu */
 table{
     color: #4f4f4f; 
     border-color: #666;
 }
 /* navigointipalkin sisällä oleville linkeille muotoilu */
-#navbar a{
+#navbar a, #hamburgerNavbar a{
     text-decoration: none;
+    font-size: 14pt;
     letter-spacing: 2pt;
     color: #556B2F;
     /* color: #4f4f4f; */
@@ -56,11 +56,19 @@ table{
     padding:10px
 }
 /* yleisesti linkeille hover-muotoilut */
-#navbar a:hover, #footer a:hover{
+#navbar a:hover, #footer a:hover, #hamburgerNavbar a:hover, #hamburgerButton:hover{
     text-decoration: none;
     color: #4f4f4f;
     border-radius: 4px;
     background-color: #ee8d51c2;
+}
+/* p-elementin muotoilu */
+p{
+    line-height: normal;
+    margin:0;
+}
+.container-fluid{
+    padding: 0;
 }
 /* navigointipalkin sijainti */
 #navbarDiv{
@@ -80,23 +88,25 @@ table{
 /* Hampparivalikon container */
 .hamburgerDiv{
     position: relative;
-    height: 60px;
+    height: fit-content;
+    min-height: 40px;
     width: 100%;
     background-color: whitesmoke;
     display: none;
+    z-index: 2;
 }
 /* hampurilaisvalikko */
-#hamburger{
-    position: absolute;
-    top: 10%;
-    left: 0;
+#hamburgerButton{
     border: unset;
     background: unset;
     padding: 10px;
+    width: fit-content;
 }
-/* hampparivalikon ikonin väritys */
-#hamburger svg {
-    stroke: #556B2F;
+#hamburgerNavbar{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* footerin containerin sijainti */
 #footerContainer{
@@ -107,11 +117,10 @@ table{
     background-color: #d9cfc5;
     width: 100%;
 }
-
 /* ------------------------------------------------------------------ */
 
 /* TÄSTÄ ALKAA SIVUSPESIFIT MUOTOILUT */
-/* etusivun kuvan containeri */
+/* sivun kuvan containeri */
 #testausHeaderImgDiv{
     width: 100%;
     max-width: 100%;
@@ -120,12 +129,12 @@ table{
     margin-top:20px;
     margin-bottom: 20px;
 }
-/* etusivun kuvan koko */
+/* sivun kuvan koko */
 #testausHeaderImg{
     width: 100%;
     filter: grayscale(15%);
 }
-/* etusivun tekstin containeri*/
+/* sivun tekstin containeri*/
 #testausHeaderTextDiv{
     width: 70%;
     top: 40%; 
@@ -136,10 +145,10 @@ table{
     text-wrap: wrap;
     letter-spacing: 2pt;
 }
-/* etusivun header-tekstin muotoilu */
+/* sivun header-tekstin muotoilu */
 #testausHeaderText{ 
     color: white;
-    text-shadow: 10px 10px 20px black;
+    text-shadow: 2px 2px 4px black;
     font-size: 4vw;
     font-weight: bold;
 }
@@ -159,17 +168,13 @@ table{
 .testColorBox{
     width: 100%;
     height: 300px;
-    /* border: solid;
-    border-color: #4f4f4f;
-    border-width: 0.1px; */
 }
 /* pienet testiväripallurat */
 .colorBall{
-    width: 30px;
+    width: 60px;
     height: 30px;
-    border-radius: 50%;
     padding:20px;
-    box-shadow: 0px 2px 2px #4f4f4f ;
+    box-shadow: 1px 1px 2px #4f4f4f ;
     cursor: pointer;
 
 }
@@ -177,11 +182,17 @@ table{
 
 /* pinemmällä näytöllä säädetään otsikoita vähän isommaksi ja  */
 @media screen and (max-width: 996px){
+    #navbarDiv{
+        display: none;
+    }
+    .hamburgerDiv {
+        display: block;
+    }
     #testausHeaderText{
         font-size: 8vw;
     }
     #testausHeaderTextSmall{
-        font-size: 16pt;
+        font-size: 14pt;
     }
     .testColorBoxDiv{
         width: 80%;
@@ -190,14 +201,5 @@ table{
     .testColorBox{
         width: 80%;
         height: 100px;
-    }
-    #navbarDiv{
-        display: none;
-    }
-    /* #navbar {
-        display:none;
-    } */
-    .hamburgerDiv {
-        display: flex;
     }
 }

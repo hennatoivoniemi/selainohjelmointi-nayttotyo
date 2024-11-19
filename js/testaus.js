@@ -19,11 +19,13 @@ colorBallElement2.forEach(function(color) {
         colorBoxElement2.style.backgroundColor  = color.id
     })
 })
-
+// vasemman puoleisen testilaatikon tyhjentävälle nappulalle klikkauksen kuuntelija
 document.getElementById("firstColorClearBtn").addEventListener("click", () => {
+    //klikkauksesta "tyhjennetään" testilaatikon väri, eli muutetaan taustaväri takaisin valkoiseksi
     colorBoxElement1.style.backgroundColor = "white"
 })
 
+//sama kuin edellä, mutta oikeanpuoleiselle testilaatikolle
 document.getElementById("secondColorClearBtn").addEventListener("click", () => {
     colorBoxElement2.style.backgroundColor = "white"
 })

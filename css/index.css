@@ -1,3 +1,116 @@
+/* TÄSTÄ ALKAA YLEISMUOTOILUT */
+html{
+    box-sizing: border-box;
+}
+/* yleinen fontti koko sivulle*/
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #4f4f4f;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+
+}
+/* otsikoiden koot tehtävänannon mukaiseksi */
+h1 {
+    font-size: 24px;
+}
+h2, h3, h4, h5 {
+    font-size: 16px;
+}
+/* vitosotsikolle tarkemmat muotoilut kuten kirjainten väliin lisää tilaa ja eri fonttiväri */
+h5{
+    letter-spacing: 2px; 
+    color: #556B2F;
+    /* color: #818963; */
+    margin-top: 20px;
+}
+/* ------------------------------------------------------------------- */
+/* TÄSTÄ ALKAA NAVBARIN JA FOOTERIN MUOTOILUT */
+/* footerin taulukkoelementille muotoilu */
+table{
+    color: #4f4f4f; 
+    border-color: #666;
+}
+/* navigointipalkin sisällä oleville linkeille muotoilu */
+#navbar a, #hamburgerNavbar a{
+    text-decoration: none;
+    font-size: 14pt;
+    letter-spacing: 2pt;
+    color: #556B2F;
+    /* color: #4f4f4f; */
+    padding: 10px;
+    font-weight: bold;
+}
+/* footerin sisällä oleville linkeille muotoilu */
+#footer a{
+    text-decoration: none;
+    color: #4f4f4f;
+    padding:10px
+}
+/* yleisesti linkeille hover-muotoilut */
+#navbar a:hover, #footer a:hover, #hamburgerNavbar a:hover, #hamburgerButton:hover{
+    text-decoration: none;
+    color: #4f4f4f;
+    border-radius: 4px;
+    background-color: #ee8d51c2;
+}
+/* p-elementin muotoilu */
+p{
+    line-height: normal;
+    margin:0;
+}
+.container-fluid{
+    padding: 0;
+}
+/* navigointipalkin sijainti */
+#navbarDiv{
+    top: 0;
+    z-index: 2;
+}
+ /* navigointipalkin yleismuotoilu */
+#navbar {
+    height: 150px;
+    box-shadow: 2px 2px 10px #4f4f4f;
+    background-color: whitesmoke;
+}
+/* kursorin muttaminen */
+.navLinks{
+    cursor: pointer;
+}
+/* Hampparivalikon container */
+.hamburgerDiv{
+    position: relative;
+    height: fit-content;
+    min-height: 40px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: none;
+    z-index: 2;
+}
+/* hampurilaisvalikko */
+#hamburgerButton{
+    border: unset;
+    background: unset;
+    padding: 10px;
+    width: fit-content;
+}
+#hamburgerNavbar{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* footerin containerin sijainti */
+#footerContainer{
+    bottom: 0;
+}
+/* footerin taustaväri ja leveys */
+#footer{
+    background-color: #d9cfc5;
+    width: 100%;
+}
+/* ---------------------------------------------------------------------- */
+/* TÄSTÄ ALKAA SIVUSPESIFI MUOTOILU */
 /* etusivun kuvan containeri */
 #headerImgDiv{
     width: 100%;
@@ -25,8 +138,7 @@
 /* etusivun header-tekstin muotoilu */
 #headerText{ 
     color: white;
-    /* text-shadow: 10px 10px 20px black; */
-    text-shadow: 5px 5px 10px #000000;
+    text-shadow: 2px 2px 4px black;
     font-size: 5vw;
     font-weight: bold;
 }
@@ -43,12 +155,18 @@
 }
 #headerSlogan{
     color: white;
-    text-shadow: 5px 5px 10px #000000;
+    text-shadow: 2px 2px 4px black;
     font-size: 2vw;
     font-style: italic;
 }
 /* pinemmällä näytöllä säädetään otsikoita vähän isommaksi ja  */
 @media screen and (max-width: 996px){
+    #navbarDiv{
+        display: none;
+    }
+    .hamburgerDiv {
+        display: block;
+    }
     #headerText{
         font-size: 8vw;
     }
@@ -56,7 +174,7 @@
         left: 45%;
     }
     #headerSlogan{
-        font-size: 4vw;
+        font-size: 14pt;
     }
     #sloganTextDiv {
         top:65%;

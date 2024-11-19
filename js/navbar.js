@@ -7,6 +7,7 @@ const hamburgerNavbarElement = document.getElementById("hamburgerNavbar") // ham
 
 // lisätään klikkauksen kuuntelija hampurilaisvalikolle
 hamburgerButton.addEventListener("click", () => {
+    // tarkistetaan sisältääkö navigoinnin container luokan open ja toimitaan sen mukaan
     if(navbarDivElement.classList.contains("open")) {
         navbarDivElement.classList.remove("open")
         hamburgerNavbarElement.style.display = "none"

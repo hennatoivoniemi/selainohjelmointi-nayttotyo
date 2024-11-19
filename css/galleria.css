@@ -1,3 +1,4 @@
+/* TÄSTÄ ALKAA YLEISMUOTOILUT */
 html{
     box-sizing: border-box;
 }
@@ -23,20 +24,17 @@ h5{
     /* color: #818963; */
     margin-top: 20px;
 }
-/* p-elementin muotoilu */
-p{
-    line-height: normal;
-    margin:0;
+/* ------------------------------------------------------------------- */
+/* TÄSTÄ ALKAA NAVBARIN JA FOOTERIN MUOTOILUT */
+/* footerin taulukkoelementille muotoilu */
+table{
+    color: #4f4f4f; 
+    border-color: #666;
 }
-.container-fluid{
-    padding:0;
-}
-
-/* NAVIGOINTI JA FOOTER */
-
 /* navigointipalkin sisällä oleville linkeille muotoilu */
-#navbar a{
+#navbar a, #hamburgerNavbar a{
     text-decoration: none;
+    font-size: 14pt;
     letter-spacing: 2pt;
     color: #556B2F;
     /* color: #4f4f4f; */
@@ -50,13 +48,20 @@ p{
     padding:10px
 }
 /* yleisesti linkeille hover-muotoilut */
-#navbar a:hover, #footer a:hover{
+#navbar a:hover, #footer a:hover, #hamburgerNavbar a:hover, #hamburgerButton:hover{
     text-decoration: none;
     color: #4f4f4f;
     border-radius: 4px;
     background-color: #ee8d51c2;
 }
-
+/* p-elementin muotoilu */
+p{
+    line-height: normal;
+    margin:0;
+}
+.container-fluid{
+    padding: 0;
+}
 /* navigointipalkin sijainti */
 #navbarDiv{
     top: 0;
@@ -75,28 +80,25 @@ p{
 /* Hampparivalikon container */
 .hamburgerDiv{
     position: relative;
-    height: 60px;
+    height: fit-content;
+    min-height: 40px;
     width: 100%;
     background-color: whitesmoke;
     display: none;
+    z-index: 2;
 }
 /* hampurilaisvalikko */
-#hamburger{
-    position: absolute;
-    top: 10%;
-    left: 0;
+#hamburgerButton{
     border: unset;
     background: unset;
     padding: 10px;
+    width: fit-content;
 }
-/* hampparivalikon ikonin väritys */
-#hamburger svg {
-    stroke: #556B2F;
-}
-/* footerissa käytettävälle taulukkoelementille muotoilu */
-table{
-    color: #4f4f4f; 
-    border-color: #666;
+#hamburgerNavbar{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* footerin containerin sijainti */
 #footerContainer{
@@ -138,7 +140,7 @@ table{
 /* Sivun ison otsikon muotoilu */
 #galleriaHeaderText{ 
     color: white;
-    text-shadow: 10px 10px 20px black;
+    text-shadow: 2px 2px 4px black;
     font-size: 4vw;
     font-weight: bold;
 }
@@ -182,23 +184,20 @@ i{
 
 /* pinemmällä näytöllä säädetään otsikoita vähän isommaksi*/
 @media screen and (max-width: 996px){
+    #navbarDiv{
+        display: none;
+    }
+    .hamburgerDiv {
+        display: block;
+    }
     #galleriaHeaderText{
         font-size: 8vw;
     }
     #galleriaHeaderTextSmall{
-        font-size: 16pt;
+        font-size: 14pt;
     }
     .galleriaImgDiv{
         width: 100%;
         height: auto;
-    }
-    #navbarDiv{
-        display: none;
-    }
-    /* #navbar {
-        display:none;
-    } */
-    .hamburgerDiv {
-        display: flex;
     }
 }
